@@ -1,0 +1,32 @@
+PIXEL PROGRESS - EDISI KUCING (mod untuk Claude Code)
+=====================================================
+
+Apa ia buat
+- Bar progress di atas kotak prompt: kucing tidur di awal, bar pelangi pastel
+  dengan tapak kaki, kucing calico berlari kejar bola benang, mangkuk makanan di 100%.
+- Panel "Agents": setiap subagent dapat kucing pixel sendiri (12 kostum).
+
+Syarat
+- Claude Code 2.1.310 atau lebih baru (desktop app tab Code, atau terminal).
+- Windows. (Mac: ikut cara manual dalam pixel-progress\README.md)
+
+Cara pasang (Windows)
+1. Extract SELURUH zip ini ke mana-mana folder.
+2. Double-click  install.cmd
+   (atau dalam PowerShell:  powershell -ExecutionPolicy Bypass -File .\install.ps1 )
+   Pilihan: tambah  -AddReminder  supaya Claude sentiasa guna bar progress
+   (ditulis ke %USERPROFILE%\.claude\CLAUDE.md).
+3. Tutup sepenuhnya dan buka semula Claude.
+4. Taip  /progress-demo  untuk tengok demo. /progress-clear untuk padam.
+5. Tukar rupa bar:  /progress-theme cat  |  /progress-theme office  |  /progress-theme rocket
+
+Apa installer ubah
+- Salin mod ke  %USERPROFILE%\claude-mods\pixel-progress  (versi lama di-backup).
+- Tambah folder itu dalam  %USERPROFILE%\.claude\settings.json  -> env.CLAUDE_CODE_PLUGIN_DIRS
+  (settings.json lama di-backup sebagai settings.json.backup-<masa>).
+
+Buang
+- Padam folder  %USERPROFILE%\claude-mods\pixel-progress  dan buang laluan itu
+  dari CLAUDE_CODE_PLUGIN_DIRS dalam settings.json.
+
+Mod ini tidak buat sebarang sambungan internet.
